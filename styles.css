@@ -31,22 +31,48 @@ body {
 }
 
 .card__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
+  cursor: pointer;
 }
 
-.card__header img {
+.card__image {
   border-radius: 5px;
   width: 100%;
+  height: 100%;
+}
+
+.card__eye {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.card__eye:hover {
+  opacity: 1;
+}
+
+.card__eye > img {
+  position: absolute;
+  display: block;
+  top: 43%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 3;
+  width: 2rem;
 }
 
 .card__title {
   color: white;
   font-size: 1rem;
+  cursor: pointer;
+}
+
+.card__title:hover {
+  color: #00fff7;
 }
 
 .card__body {
@@ -118,5 +144,10 @@ body {
 .card__profile-name {
   color: white;
   margin-left: 3px;
+  cursor: pointer;
+}
+
+.card__profile-name:hover {
+  color: #00fff7;
 }
 /*# sourceMappingURL=styles.css.map */
