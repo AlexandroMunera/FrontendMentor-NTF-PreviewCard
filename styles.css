@@ -48,6 +48,10 @@ body {
   right: 0;
   bottom: 0;
   opacity: 0;
+  background-color: rgba(1, 247, 255, 0.5);
+  border-radius: 5px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .card__eye:hover {
@@ -61,7 +65,7 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: 3;
+  z-index: 2;
   width: 2rem;
 }
 
