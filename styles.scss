@@ -21,26 +21,17 @@ body {
   color: $Soft-blue;
 }
 
-.container {
-  background-color: #0c1729;
-  height: 30rem;
-  width: 18rem;
-  display: grid;
-  place-items: center;
-  box-shadow: 0 1.2rem #0c192c;
-  border-radius: 10px;
-}
-
 .card {
-  height: 26rem;
-  width: 15rem;
+  max-width: 16rem;
+
   background-color: $Very-dark-blue-card-BG;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 1.2rem #0c192c;
+
 
   &__header {
     position: relative;
-    cursor: pointer;
   }
 
   &__image {
@@ -78,9 +69,13 @@ body {
   &__title {
     color: $White;
     font-size: 1rem;
-    cursor: pointer;
 
-    &:hover {
+    & > a {
+      text-decoration: none;
+      color: $White;
+    }
+
+    & > a:hover {
       color: $Cyan;
     }
   }
@@ -95,6 +90,8 @@ body {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    padding: 0;
+    margin: 0;
   }
 
   &__value {
@@ -137,7 +134,7 @@ body {
 
   &__profile-name {
     color: $White;
-    margin-left: 3px;
+    margin-left: 2px;
     cursor: pointer;
 
     &:hover {
